@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>My first web page</title>
+    <style>
+        body {
+            background-color: lightblue;
+            font-family: Georgia;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: skyblue;
+            color: white;
+        }
+
+        h2 {
+            color: white;
+        }
+
+        h3 {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="mybutton">My favorite country</button>
+    <p id="myParagraph">Click the button</p>
+    <script>
+        $(document).ready(function() {
+            var paragraphVisible = true;
+            $("#mybutton").click(function() {
+                if (paragraphVisible) {
+                    $("#myParagraph").hide();
+                } else {
+                    $("#myParagraph").html("France!<br>“I’m not a complicated girl, she laughed, I just want to run away with you, rob a bank, fall in love and eat ice creams in Paris.” ― Michael Faudet").show();
+                }
+                paragraphVisible = !paragraphVisible;
+            });
+        });
+    </script>
+    <h1>Welcome to my personal page!</h1>
+    <hr>
+    <h2>☺ Something about me.</h2>
+    <h3>
+        - Name: 洪唯童<br>
+        - Birthday: 92/11/25<br>
+        - Department: 資訊工程系<br>
+        - Nation: 台灣
+    </h3>
+    <h2>☺ Things I like to do.</h2>
+    <a href="https://www.youtube.com/watch?v=SxDOW671Rtg" target="_blank">
+        <h3>- Favorite song</h3>
+    </a>
+    <a href="https://www.wdragons.com/court_tianmu/" target="_blank">
+        <h3>- Leisure activities</h3>
+    </a>
+    <a href="https://www.secondfloorcafe.com/" target="_blank">
+        <h3>- Favorite restaurant</h3>
+    </a>
+    <hr>
+    <h1>Thanks for visiting, hope you like it :)</h1>
+</body>
+
+</html>
